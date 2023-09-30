@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #1D1D23;
+    padding-top: 1rem;
+}
+
+.container {
+    width: 40rem;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.set-time {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #34344A;
+}
+
+input {
+    width: 5rem;
+    font-size: 1.6rem;
+    padding: 0.4rem 1rem;
+    background: none;
+    outline: none;
+    color: white;
+    text-decoration: underline;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#setButton,
+#timerButton {
+    padding: 0.4rem 2rem;
+    border-radius: 26px;
+    background: #F0F757;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.current-timers {
+    border-radius: 50px;
+    background: #39393E;
+    padding: 7px 20px;
+}
+
+#timers {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #34344A;
+    height: 4rem;
+}
+#completedtimerButton {
+    background-color: #39393E;;
+    padding: 0.4rem 2rem;
+    border-radius: 26px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.time-up {
+    display: flex;
+    width: 100%;
+    background-color: #F0F757 !important;
+    color: #34344A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #34344A;
+    height: 4rem;
+    font-weight: 600;
+}
+.time-up>h3 {
+    margin: auto;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .set-time {
+        flex-direction: column;
+    }
+}
